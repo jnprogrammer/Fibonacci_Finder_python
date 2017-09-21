@@ -1,9 +1,5 @@
 
-#fib_cache = {}
-
 def fibonacci(n):
-  #  if n in fib_cache:
-   #     return fib_cache[n]
     if n == 1:
         return 1
     elif n == 2:
