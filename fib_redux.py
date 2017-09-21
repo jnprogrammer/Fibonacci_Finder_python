@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-@lru_cache(maxsize = 10000)
+@lru_cache(maxsize = 30000)
 def fibonacci(n):
 
     #checking for correct data type.
@@ -18,8 +18,9 @@ def fibonacci(n):
     elif n > 2:
         return fibonacci(n-1) + fibonacci(n-2)
 
-for n in range(1,3110):
+for n in range(1,15710):
     print(n," : ", fibonacci(n))
 
-for n in range(1,12):
+for n in range(1,15710):
     print(fibonacci(n+1) / fibonacci(n))
+

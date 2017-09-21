@@ -1,3 +1,4 @@
+import sys
 
 fib_cache = {}
 # this dictionary is to cache values to prevent slowdown from recursive calls
@@ -14,6 +15,17 @@ def fibonacci(n):
         value = fibonacci(n-1) + fibonacci(n-2)
     fib_cache[n] = value
     return value
+# this doesn't work yet, it must take a command-line argument as the number to find in the fib sequence
+n = sys.argv[1]
+n = int(n)
 
-for n in range(1,301):
+if type(n) != int:
+    raise TypeError("Argument must be a Positive INT")
+if n < 1:
+    raise ValueError("Argument must be a Positive INT")
+i = 0
+while True:
     print(n," : ", fibonacci(n))
+    i = i + 1
+    if(i > n):
+        break
