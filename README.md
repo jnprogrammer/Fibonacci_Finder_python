@@ -1,0 +1,1 @@
+A simple Fibonacci exercise because I love math.
