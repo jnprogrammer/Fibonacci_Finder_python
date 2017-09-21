@@ -20,7 +20,8 @@ def fibonacci(n):
 
 for n in range(1,15710):
     print(n," : ", fibonacci(n))
-
+    
+    #this shows that the squence is close to the golden ratio
 for n in range(1,15710):
     print(fibonacci(n+1) / fibonacci(n))
 
