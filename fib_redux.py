@@ -18,7 +18,7 @@ def fibonacci(n):
     elif n > 2:
         return fibonacci(n-1) + fibonacci(n-2)
 
-for n in range(1,2000):
+for n in range(1,185):
     print(n," : ", fibonacci(n))
     
     #this shows that the squence is close to the golden ratio
